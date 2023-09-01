@@ -210,11 +210,17 @@ int main(void)
 	  	  		  HAL_Delay(500);
 	  	  }
 }
-
+```
 
 ## Output screen shots of proteus  :
- 
- 
+
+##LED OFF :
+
+![Screenshot 2023-09-01 112504](https://github.com/nkishore2210/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/118707090/790e0b32-8369-48f3-86ec-e966c2958730)
+
+##LED ON :
+
+
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
  
  
