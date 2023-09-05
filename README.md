@@ -174,57 +174,13 @@ https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
 
 ## STM 32 CUBE PROGRAM :
 
-```
-Developed by: KISHORE.N
-REF NO: 212222240049
 
-#include "main.h"
-#include "stdbool.h"
-bool buttonstatus;
-
-void SystemClock_Config(void);
-static void MX_GPIO_Init(void);
-
-int main(void)
-{
-  
-  HAL_Init();
-
-  SystemClock_Config();
-
-  MX_GPIO_Init();
-  
-  while (1)
-  {
-	  buttonstatus=HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0);
-	  	  if(buttonstatus==0)
-	  	  {
-	  	  		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_RESET);
-	  	  		  HAL_Delay(500);
-	  	  		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_SET);
-	  	  		  HAL_Delay(500);
-	  	  }
-	  	  else
-	  	  {
-	  	  		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_RESET);
-	  	  		  HAL_Delay(500);
-	  	  }
-}
-```
 
 ## Output screen shots of proteus  :
 
-##LED OFF :
-
-![Screenshot 2023-09-01 112504](https://github.com/nkishore2210/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/118707090/790e0b32-8369-48f3-86ec-e966c2958730)
-
-##LED ON :
-
-![Screenshot 2023-09-01 112421](https://github.com/nkishore2210/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/118707090/4acb50fa-18e2-4e5f-b651-095829fbd481)
 
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
  
- ![Screenshot 2023-09-01 114417](https://github.com/nkishore2210/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/118707090/e8c6ecbc-b0b6-419c-ab69-1e14cf6ca1c8)
 
 ## Result :
 Interfacing a lcd display with ARM microcontroller are simulated in proteus and the results are verified.
